@@ -1,0 +1,24 @@
+<ion-header>
+    <ion-navbar>
+        <ion-title>Geolocation</ion-title>
+        <ion-buttons end>
+            <button primary (click)="findMe($event)">
+                Find me
+                <ion-icon name="compass"></ion-icon>
+            </button>
+        </ion-buttons>
+    </ion-navbar>
+</ion-header>
+
+<ion-content padding class="home">
+    <ion-card>
+        <ion-card-header>
+            My Location
+        </ion-card-header>
+        <ion-card-content>
+            Latitude: {{lat}}<br>
+            Longitude: {{long}}<br>
+            Altitude: {{altitude}}
+        </ion-card-content>
+    </ion-card>
+</ion-content>
